@@ -21,9 +21,16 @@ for i in range(end_n):
 ans = []
 # Using zip to access them as pairs
 for s, e in zip(start_index, end_index):
-    this = string[s:e] # Substring with the given range
-    count = this.count("|*|") # Finding the number of bees between flowers
-    ans.append(count)
+    sub = string[s:e + 1]
+    # print(sub)
+    first_flower = sub.find("|") # FINding the first flower
+    last_flower = sub.rfind("|") # Finding the last flower.. using reverse find which traverses the string in reverse
+
+    if -1 not in [first_flower, last_flower]: # Checking if both are found.. 
+        ans.append(sub[first_flower+1:last_flower].count('*')) # Calculating the bees between the first and last flower
+    else:
+        ans.append(0)
+
 
 print(ans)
 
