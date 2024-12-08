@@ -1,4 +1,5 @@
-"""Bees and flowers are placed on a line segment represented by a string. The character `*` represents a bee, and `|` represents a flower. The string consists of only these two characters. You are given two arrays, `startIndex` and `endIndex`, which represent ranges on the line segment. For each range, calculate the number of bees between two flowers, including the flowers at the endpoints.
+""" Q2
+Bees and flowers are placed on a line segment represented by a string. The character `*` represents a bee, and `|` represents a flower. The string consists of only these two characters. You are given two arrays, `startIndex` and `endIndex`, which represent ranges on the line segment. For each range, calculate the number of bees between two flowers, including the flowers at the endpoints.
 Note: `startIndex` and `endIndex` are 1-indexed.
 """
 
