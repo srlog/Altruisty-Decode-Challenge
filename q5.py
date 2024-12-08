@@ -12,7 +12,6 @@ for i in range(3): # 3 rounds
         each_round.append(read)
     data.append(each_round)
 
-
 r1 , r2, r3 = data
 
 # Calculating the average for each trainee
